@@ -18,11 +18,10 @@ void capitalizeFirstLetters(wchar_t str[]) {
 }
 
 int main() {
-    setlocale(LC_ALL, "");
 
     wchar_t str[1000];
 
-    wprintf(L"Enter text: ");
+    printf(L"Enter text: ");
     fgetws(str, sizeof(str)/sizeof(str[0]), stdin);
 
     capitalizeFirstLetters(str);
